@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+    <title>Spiral test</title>
+<script
+    src="https://code.jquery.com/jquery-3.5.1.js"
+    integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc="
+    crossorigin="anonymous"></script>
+</head>
+
+<style>
+
+body{
+  background-image: url("https://images.unsplash.com/photo-1524438358316-594d46d2435a?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1787&q=80");
+}
+
+.spiral-content{
+  margin-top:2%;
+  margin-left:4%;
+  color:white;
+}
+#header{
+  margin-bottom:2rem;
+}
+button#evaluate.btn.btn-success{
+  margin-left: 1rem;
+}
+input[type="file"] {
+    display: none;
+}
+.custom-file-upload {
+    cursor: pointer;
+}
+label{
+  margin-bottom:0;
+}
+img{
+  margin-top: 2%;
+  height:30%;
+  width:30%;
+}
+</style>
+
+<body>
+    <div class="spiral-content">
+    <h1 id="header">Select image for spiral test</h1>
+    <form action="/image_data/spiral" method="POST" enctype="multipart/form-data">
+          <label class="custom-file-upload btn btn-primary">
+            <label for="myfile" >Select a file</label>
+            <input type="file" onchange="captureFile()" id="file-id" name="image">
+          </label>
+            <button class="btn btn-success"  type="submit" id="evaluate" onclick="Evaluate">Evaluate</button>
+    </form>
+    <img id="image">
+    <p id="p"></p>
+  </div>
+
+    <script>
+        var uploadedimage;
+        function captureFile()
+        {
+            let file = document.getElementById("file-id").files;
+            let filereader = new FileReader();
+            filereader.onload = function(filedata)
+            {
+                // custom function , filedata.target.result -> contains nase64 string
+                let image = document.getElementById("image");
+                image.src=filedata.target.result;
+                uploadedimage=image.src;
+            }
+            filereader.readAsDataURL(file[0]);
+        }
+        /*
+        function sendAjaxData()
+        {
+          if(uploadedimage==undefined)
+            return;
+          else {
+            $.post('/image_data',{"image":uploadedimage},function(data) {
+                let response = data.result;
+                $("#p").text(response);
+            });
+          }
+        }*/
+    </script>
+</body>
+</html>

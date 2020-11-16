@@ -1,0 +1,26 @@
+body{
+  background-image: url("https://images.unsplash.com/photo-1504121449080-76ab9eb5bd2b?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1950&q=80");
+  background-size: cover;
+  min-height: 100%;
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+a,a:hover {
+  color:white;
+  text-decoration: none;
+}
+.col-6{
+  margin-top:2rem;
+}
+h1{
+  text-align:center;
+  color:black;
+  font-family: 'Sansita Swashed', cursive;
+}
+p{
+  text-align: justify;
+  font-weight:600;
+}
+.btn.btn-primary{
+  margin-right:1rem;
+}
