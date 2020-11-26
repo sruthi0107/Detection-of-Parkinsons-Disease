@@ -10,7 +10,7 @@ This project was inspired by [Adrian Rosebrock](https://www.pyimagesearch.com/20
 3) Run the following command- `python index.py`
 4) Copy and paste the link generated in your browser- `http://127.0.0.1:5000/`
 
-#### NOTE: Ensure that you have [pip](https://pip.pypa.io/en/stable/installing/) installed in your system along with the following commands-
+#### NOTE: Ensure that you have [pip](https://pip.pypa.io/en/stable/installing/) installed in your system. Also ensure that you have run the following commands in your terminal-
 1. `pip install sklearn`
 2. `pip install numpy`
 3. `pip install imutils`
