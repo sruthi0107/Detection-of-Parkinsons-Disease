@@ -13,8 +13,7 @@ This project was inspired by [Adrian Rosebrock](https://www.pyimagesearch.com/20
 #### NOTE: Ensure that you have [pip](https://pip.pypa.io/en/stable/installing/) installed in your system. Also ensure that you have run the following commands in your terminal-
 1. `pip install sklearn`
 2. `pip install numpy`
-3. `pip install imutils`
-4. `pip install opencv-python`
-5. `pip install Pillow`
+3. `pip install opencv-python`
+4. `pip install Pillow`
 
 #### This project was created by me in collaboration with [Prasad Adhiyaman](https://github.com/Prasad-adhi/Detection-of-Parkinsons-Disease)
