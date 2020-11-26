@@ -1,18 +1,10 @@
 from sklearn.ensemble import RandomForestClassifier
-from sklearn.preprocessing import LabelEncoder
 from sklearn.metrics import confusion_matrix
-from sklearn.neighbors import KNeighborsClassifier
-from sklearn.naive_bayes import GaussianNB
 from sklearn.externals import joblib 
-from xgboost import XGBClassifier
 from skimage import feature
-from imutils import build_montages
-from imutils import paths
 import numpy as np
-import argparse
 import cv2
 from cv2 import resize
-import os
 from PIL import Image
 
 def quantify_image(image):

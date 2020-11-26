@@ -1,18 +1,10 @@
 from sklearn.ensemble import RandomForestClassifier
-from sklearn.preprocessing import LabelEncoder
 from sklearn.metrics import confusion_matrix
-from sklearn.neighbors import KNeighborsClassifier
-from sklearn.naive_bayes import GaussianNB
 from sklearn.externals import joblib 
-from xgboost import XGBClassifier
 from skimage import feature
-from imutils import build_montages
-from imutils import paths
 import numpy as np
-import argparse
 import cv2
 from cv2 import resize
-import os
 from PIL import Image
 
 def quantify_image(image):
@@ -49,12 +41,3 @@ def s_model(image):
     predictions = model.predict([testX])
     #predictions = model.predict([image])
     return predictions
-'''
-im1 = cv2.imread('D:\Prasad\detection of parkinsons\detect-parkinsons\V03PE01.png')
-testX=specify_image(im1)
-#testX=specify_image(image)
-model=joblib.load('D:\Prasad\detection of parkinsons\detect-parkinsons\spiral_model.pkl')
-predictions = model.predict([testX])
-#predictions = model.predict([image])
-print(predictions)
-'''
