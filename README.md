@@ -16,6 +16,5 @@ This project was inspired by [Adrian Rosebrock](https://www.pyimagesearch.com/20
 3. `pip install imutils`
 4. `pip install opencv-python`
 5. `pip install Pillow`
-6. `pip install joblib`
 
 #### This project was created by me in collaboration with [Prasad Adhiyaman](https://github.com/Prasad-adhi/Detection-of-Parkinsons-Disease)
