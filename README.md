@@ -16,4 +16,4 @@ This project was inspired by [Adrian Rosebrock](https://www.pyimagesearch.com/20
 3. `pip install opencv-python`
 4. `pip install Pillow`
 
-#### This project was created by me in collaboration with [Prasad Adhiyaman](https://github.com/Prasad-adhi/Detection-of-Parkinsons-Disease)
+#### This project was created by myself in collaboration with [Prasad Adhiyaman](https://github.com/Prasad-adhi/Detection-of-Parkinsons-Disease)
